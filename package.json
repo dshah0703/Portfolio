@@ -1,9 +1,13 @@
 {
-  "name": "week3part2",
-  "version": "0.0.0",
+  "name": "comp229_w2021",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^12.18.3",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
@@ -16,5 +20,18 @@
     "jquery": "^3.5.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "��#\u0000 \u0000E\u0000x\u0000p\u0000r\u0000e\u0000s\u0000s\u0000_\u0000P\u0000o\u0000r\u0000t\u0000f\u0000o\u0000l\u0000i\u0000o\u0000\r\u0000 \u0000#\u0000 \u0000C\u0000O\u0000M\u0000P\u00002\u00002\u00009\u0000-\u0000W\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000#\u0000 \u0000E\u0000_\u0000P\u0000o\u0000r\u0000t\u0000f\u0000o\u0000l\u0000i\u0000o\u0000_\u0000C\u0000o\u0000m\u0000p\u00002\u00002\u00009\u0000\r\u0000 \u0000#\u0000 \u0000E\u0000_\u0000P\u0000o\u0000r\u0000t\u0000f\u0000o\u0000l\u0000i\u0000o\u0000_\u0000C\u0000o\u0000m\u0000p\u00002\u00002\u00009\u0000\r\u0000 \u0000#\u0000 \u0000C\u0000o\u0000m\u0000p\u0000_\u00002\u00002\u00009\u0000_\u0000P\u0000o\u0000r\u0000t\u0000f\u0000o\u0000l\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dshah0703/Comp_229_Portfolio.git"
+  },
+  "author": "Devanshi Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dshah0703/Comp_229_Portfolio/issues"
+  },
+  "homepage": "https://github.com/dshah0703/Comp_229_Portfolio#readme"
 }
