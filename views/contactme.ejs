@@ -1,74 +1,81 @@
 <%- include partials/header.ejs %>
- 
- 
+
+
 <%- include partials/main_nav.ejs  %>
 
-  
-  <!--Main Content--> 
 
-  <main class="container">
-    <div class="jumbotron jumbotron-fluid">
-      <h1 class="display-7">Welcome to the <%= title %> page</h1>  
+<!--Main Content--> 
+
+<main class="container">
+<div class="jumbotron jumbotron-fluid">
+    <h1 class="display-7">Welcome to the <%= title %> page</h1>  
+</div>
+<section class="contactme">
+<div class="container">
+    <div class="contactinfo">
+        <div>
+        <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fas fa-lg fa-map-marked-alt"></i></span>
+                    <span>Gujarat,India</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-lg fa-envelope"></i></span>
+                    <span>devanshis7300@gmail.com</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-lg fa-mobile"></i></span>
+                    <span>+91 7575030281</span>
+                </li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><span style="color: black;"><i class="fab fa-lg fa-instagram">My Instagram Account</i></span></a></li>
+                <li><a href="#"><span style="color: black;"><i class="fab fa-lg fa-twitter">My twitter Account</i></span></a></li>
+                <li><a href="#"><span style="color: black;"><i class="fab fa-lg fa-linkedin">My Linkedin Account</i></span></a></li>
+                <li><a href="#"><span style="color: black;"><i class="fab fa-lg fa-facebook">My Facebook Account</i></span></a></li>
+            </ul>
+            <form action="" method="get">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputName">First Name</label>
+      <input type="text" class="form-control" id="inputName">
     </div>
-     <!--effect wrap ends-->
-    <section class="about-section section">
-        <div class="row">
-                <!--social media connection-->
-                <div class="social-links">
-                    <a href="#" class="btn-1 outer-shadow hover-in shadow"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/Devansh99262833" class="btn-1 outer-shadow hover-in shadow"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/devanshi_0703/?hl=en" class="btn-1 outer-shadow hover-in shadow"><i class="fab fa-instagram"></i></a>
-                    <a href="www.linkedin.com/in/devanshi-shah-9a373b202" class="btn-1 outer-shadow hover-in shadow"><i class="fab fa-linkedin-in"></i></a>
-
-                <!--social media connection ends-->
-                </div>
-            </div>
-   <section class="contact-section section">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2 data-heading="contact">Contact Details</h2>
-            </div>
-        </div>
-        <div class="row">
-        <div class="contact-item">
-            <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-phone"></i>
-            <span>Phone</span>
-            <p>+91 7575030281</p>
-            </div>
-        </div>
-        <div class="contact-item">
-            <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-envelope"></i>
-            <span>Email</span>
-            <p>devanshis7300@gmail.com</p>
-            <p>dshah163@my.centennialcollege.ca</p>
-            </div>
-        </div>
-        <div class="contact-item">
-            <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Address</span>
-            <p>C-102,DevKrupa Heights, Vasna,Ahmedabad.</p>
-           
-            </div>
-        </div>
-        <div class="row">
-        <div class="contact-form">
-        <form>
-
-        </form>
+    <div class="form-group col-md-6">
+      <label for="inputLname">Last Name</label>
+      <input type="text" class="form-control" id="inputLname">
     </div>
-   </section>
-    </main>
-  
-        
+     <div class="form-group col-md-6">
+      <label for="inputEmail">Email Address</label>
+      <input type="email" class="form-control" id="inputEmail">
+    </div>
+  <div class="form-group">
+    <label for="inputNumber">Number</label>
+    <input type="text" class="form-control" id="inputNumber" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="inputMessage">Write A Message here</label>
+    <input type="text" class="form-control" id="inputMessage" >
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <label class="form-check-label" for="gridCheck">
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" formmethod="post">Submit</button>
+</form>
+        </div>
+    </div>
+     
+
+
+</div>
+</section>     
+
     
 
-
-
-
+</main>
 
 
 <!--For background section start-->
@@ -76,14 +83,14 @@
 <head>
 <style>
 body {
-  background-image: url("image/banner7.jpeg");
-  background-color: #cccccc;
+background-image: url("image/banner7.jpeg");
+background-color: #cccccc;
 }
 
 </style>
 </head>
 </html>
- 
+
 <%- include partials/bottom_nav.ejs %>
 
- <%- include partials/footer.ejs %>
+<%- include partials/footer.ejs %>
