@@ -13,6 +13,7 @@
     margin: auto;
 }
 
+
 body{
     background-color: black;
     color: rgb(226, 8, 172), 31, 31;
@@ -38,13 +39,18 @@ body{
 .home .home-content .text-1{
     font-size:60px;
     margin: 5px 0;
-    color: lightsalmon;
-
+    color: crimson;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
 }
 .home .home-content .text-2{
     font-size: 55px;
     margin: 5px 0;
-    color:navajowhite
+    color:lightsalmon
 }
 .home .home-content .text-3{
     font-size:65px;
@@ -57,6 +63,13 @@ body{
     font-style: italic;
     color: rgb(189, 17, 132);
     margin-left: -3px;
+    
+}
+.home_img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 295px;
     
 }
 .btn-1{
@@ -308,4 +321,60 @@ body {
     max-width: 100%;
     filter:invert(1);
     opacity: 0.5;
+}
+
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
