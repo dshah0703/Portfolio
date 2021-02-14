@@ -207,7 +207,7 @@ body{
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 17px;
-    color: grey;
+    color:purple;
 }
 .about-section .about-info span{
     font-weight: 800;
@@ -270,7 +270,7 @@ body {
     left: 0;
     width: 50%;
     height: 100%;
-    background: #03a9f4;
+    background: hotpink
 }
 .contactme .container{
     position: relative;
