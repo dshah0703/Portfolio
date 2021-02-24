@@ -1,0 +1,53 @@
+<!-- File Name : index.ejs
+    Student Name : Devanshi Shah
+    Student Id   : 301175169
+    Date         : 13 -02 -2021 --->
+<%- include partials/header.ejs %>
+ 
+ 
+<%- include partials/main_nav.ejs  %>
+
+  
+  <!--Main Content--> 
+ 
+
+  <main class="container">
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+          <h1><%= title %></h1>
+          <br>
+          <table class = "table table-bordered table-striped table-hover">
+          <!---Header Row--->
+          <tr class="d-flex">
+            <th class="text-center col-2">Name</th>
+            <th class="text-center col-3">Contact_Number</th>
+            <th class="text-center col-5">Email Id</th>
+          </tr>
+          <!---Repeated Templet Row--->
+
+          <% for(let count = 0; count < BusinessList.length; count++) { %>
+            <tr class="d-flex">
+                <td class="text-center col-2"><%= BusinessList[count].name %></td>
+                <td class="text-center col-3"><%= BusinessList[count].contact_number %></td>
+                <td class="text-center col-5"><%= BusinessList[count].email %></td>
+            </tr>
+
+          <% } %>
+
+              
+          </table>
+        </div>
+    </div>
+
+
+
+  </main>
+
+
+
+
+
+<%- include partials/bottom_nav.ejs %>
+
+
+<%- include partials/footer.ejs %>

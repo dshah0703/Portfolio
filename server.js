@@ -10,7 +10,7 @@
  * Module dependencies.
  */
 
-var app = require('./app');
+var app = require('./server/config/app');
 var debug = require('debug')('week3part2:server');
 var http = require('http');
 
