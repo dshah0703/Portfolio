@@ -2,10 +2,10 @@
     Student Name : Devanshi Shah
     Student Id   : 301175169
     Date         : 13 -02 -2021 --->
-<%- include partials/header.ejs %>
+<%- include ../partials/header.ejs %>
  
  
-<%- include partials/main_nav.ejs  %>
+<%- include ../partials/main_nav.ejs  %>
 
   
   <!--Main Content--> 
@@ -13,8 +13,10 @@
 
   <main class="container">
     <div class="row">
-        <div class="offset-md-1 col-md-10">
+        <div class="offset-md-1 col-md-15">
           <h1><%= title %></h1>
+          <a href="/business-list/add" class="btn btn-primary" role="button">
+          <i class="fas fa-plus-circle"></i>Add New Contact</a>
           <br>
           <table class = "table table-bordered table-striped table-hover">
           <!---Header Row--->
@@ -22,6 +24,8 @@
             <th class="text-center col-2">Name</th>
             <th class="text-center col-3">Contact_Number</th>
             <th class="text-center col-5">Email Id</th>
+            <th class="text-center col-3"></th>
+            <th class="text-center col-3"></th>
           </tr>
           <!---Repeated Templet Row--->
 
@@ -30,6 +34,16 @@
                 <td class="text-center col-2"><%= BusinessList[count].name %></td>
                 <td class="text-center col-3"><%= BusinessList[count].contact_number %></td>
                 <td class="text-center col-5"><%= BusinessList[count].email %></td>
+                <td class="text-center col-3">
+                    <a href="/business-list/edit/<%= BusinessList[count]._id %>" class="btn btn-primary">
+                    <i class="fas fa-pencil-alt"></i>Edit Contact</a>
+                </td>
+                <td class="text-center col-3">
+                    <a href="/business-list/delete/<%= BusinessList[count]._id %>" class="btn btn-danger">
+                    <i class="fas fa-trash-alt"></i> Delete Contact</a>
+                </td>
+                
+                  
             </tr>
 
           <% } %>
@@ -47,7 +61,7 @@
 
 
 
-<%- include partials/bottom_nav.ejs %>
+<%- include ../partials/bottom_nav.ejs %>
 
 
-<%- include partials/footer.ejs %>
+<%- include ../partials/footer.ejs %>
