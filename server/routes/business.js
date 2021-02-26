@@ -30,5 +30,4 @@ router.post('/edit/:id',businessController.processEditPage);
 /*Get method to perform Deletion - Delete Operation*/
 router.get('/delete/:id', businessController.performDelete);
 
-
 module.exports = router;
