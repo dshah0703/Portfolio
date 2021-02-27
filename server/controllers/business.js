@@ -14,7 +14,10 @@ module.exports.displayBusinessList = (req,res,next) => {
         else
         {
            // console.log(BusinessList);
-           res.render('business/list',{title: 'Business', BusinessList: businesslist});
+           res.render('business/list',
+           {title: 'Business', 
+           BusinessList: businesslist,
+            displayName: req.user ? req.user.displayName : ''});
         }
     }).sort({"name":1})
 }
@@ -58,7 +61,8 @@ module.exports.displayEditPage =  (req, res, next) => {
         else
         {
             //show the edit view
-            res.render('business/edit', {title: 'Edit Business Contacts', business: businessToEdit});
+            res.render('business/edit', {title: 'Edit Business Contacts', business: businessToEdit,
+            displayName: req.user ? req.user.displayName : ''});
         }
 
     });
