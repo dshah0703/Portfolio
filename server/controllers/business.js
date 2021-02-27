@@ -16,7 +16,7 @@ module.exports.displayBusinessList = (req,res,next) => {
            // console.log(BusinessList);
            res.render('business/list',{title: 'Business', BusinessList: businesslist});
         }
-    });
+    }).sort({"name":1})
 }
 
 module.exports.displayAddPage = (req, res, next) => {

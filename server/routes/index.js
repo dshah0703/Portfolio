@@ -22,5 +22,22 @@ router.get('/service', indexController.displayServicePage);
 /*GET Contact Me Page*/
 router.get('/contactme', indexController.displayContactPage);
 
+/* Post Route for Displaying  the Login Page */
+router.get('/login',indexController.displayLoginPage);
+
+
+/*Get method to Processing Login Page*/
+router.post('/login', indexController.processLoginPage);
+
+/*Post Route for Displaying  the Register Page */
+router.get('/register', indexController.displayRegisterPage);
+
+
+/*Get method to Processing the Register Page*/
+router.post('/register', indexController.processRegisterPage);
+
+/*Get method to perform LogOut Page*/
+router.get('/logout', indexController.performLogout);
+
 
 module.exports = router;
