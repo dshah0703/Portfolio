@@ -29,7 +29,7 @@
         <% } else { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/contactme"><i class="fas fa-lg fa-address-book"></i> Contact me </a>
+          <a class="nav-link" href="/contact"><i class="fas fa-lg fa-address-book"></i> Contact me </a>
         </li>
 
         <% if (title == "Project") { %>
@@ -37,22 +37,26 @@
         <% } else { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/project"><i class="fab fa-lg fa-elementor"></i> Project </a>
+          <a class="nav-link" href="/projects"><i class="fab fa-lg fa-elementor"></i> Project </a>
         </li>
          <% if (title == "Business") { %>
         <li class="nav-item active">
         <% } else { %>
         <li class="nav-item">
         <% } %>
+        
+            <% if(typeof displayName == 'string' && displayName) { %>
           <a class="nav-link" href="/business-list"><i class="fas fa-user-tie"></i> Business-Contacts </a>
+           <% } %>
         </li>
+
 
         <% if (title == "Service") { %>
         <li class="nav-item active">
         <% } else { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/service"><i class="fas fa-lg fa-users-cog"></i> Service </a>
+          <a class="nav-link" href="/services"><i class="fas fa-lg fa-users-cog"></i> Service </a>
         </li>
 
         <% if(typeof displayName == 'string' && displayName) { %>

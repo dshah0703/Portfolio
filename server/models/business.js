@@ -1,12 +1,13 @@
 let mongoose = require('mongoose');
-//create a model class, (Model is just a class.)
+
+// create a model class
 let businessModel = mongoose.Schema({
-    name : String,
-    contact_number : String,
-    email : String
+    name: String,
+    number: Number,
+    email: String
 },
 {
-    collection : "business"
+    collection: "businesses"
 });
 
-module.exports = mongoose.model('business',businessModel);
+module.exports = mongoose.model('Business', businessModel);

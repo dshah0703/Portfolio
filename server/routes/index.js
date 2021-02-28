@@ -1,43 +1,39 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 let indexController = require('../controllers/index');
 
 /* GET home page. */
 router.get('/', indexController.displayHomePage);
 
-/*GET home page.*/
+/* GET home page. */
 router.get('/home', indexController.displayHomePage);
 
-/*GET About Me Page */
+/* GET About Us page. */
 router.get('/about', indexController.displayAboutPage);
 
-/*GET Project Page */
-router.get('/project', indexController.displayProjectPage);
+/* GET Products page. */
+router.get('/projects', indexController.displayProductsPage);
 
+/* GET Services page. */
+router.get('/services', indexController.displayServicesPage);
 
-/*GET Service Page*/
-router.get('/service', indexController.displayServicePage);
+/* GET Contact Us page. */
+router.get('/contact', indexController.displayContactPage);
 
-/*GET Contact Me Page*/
-router.get('/contactme', indexController.displayContactPage);
+/* GET Route for displaying the Login page */
+router.get('/login', indexController.displayLoginPage);
 
-/* Post Route for Displaying  the Login Page */
-router.get('/login',indexController.displayLoginPage);
-
-
-/*Get method to Processing Login Page*/
+/* POST Route for processing the Login page */
 router.post('/login', indexController.processLoginPage);
 
-/*Post Route for Displaying  the Register Page */
+/* GET Route for displaying the Register page */
 router.get('/register', indexController.displayRegisterPage);
 
-
-/*Get method to Processing the Register Page*/
+/* POST Route for processing the Register page */
 router.post('/register', indexController.processRegisterPage);
 
-/*Get method to perform LogOut Page*/
+/* GET to perform UserLogout */
 router.get('/logout', indexController.performLogout);
-
 
 module.exports = router;

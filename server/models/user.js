@@ -1,64 +1,58 @@
-//this file is used for authentication i.e. for login
-
-const { Mongoose } = require('mongoose');
+// require modules for the User Model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
-const { collection } = require('./business');
 
 let User = mongoose.Schema
 (
     {
-        username:
+        username: 
         {
             type: String,
             default: '',
             trim: true,
-            requrired: 'username is required'
+            required: 'username is required'
         },
-
-        /*password:
-        {
+        
+        // password: 
+        // {
+        //     type: String,
+        //     default: '',
+        //     trim: true,
+        //     required: 'password is required'
+        // },
+        
+       email: 
+       {
             type: String,
             default: '',
             trim: true,
-            required: 'password is required'
-        }
-        */
-       email:
-       {
-           type: String,
-           default: '',
-           trim: true,
-           required: 'email Id is required'
+            required: 'email address is required'
        },
-
-       displayName:
+       displayName: 
        {
-           type: String,
-           default: '',
-           trim: true,
-           required: 'Display Name is required'
+            type: String,
+            default: '',
+            trim: true,
+            required: 'Display Name is required'
        },
-       created:
+       created: 
        {
-           type: Date,
-           default: Date.now
+            type: Date,
+            default: Date.now
        },
-       update:
+       update: 
        {
-           type: Date,
-           default: Date.now
+            type: Date,
+            default: Date.now
        }
-    
-
-
     },
     {
-    collection: "users"
+        collection: "users"
     }
 );
 
-//configure options for User Model
+// configure options for User Model
+
 let options = ({ missingPasswordError: 'Wrong / Missing Password'});
 
 User.plugin(passportLocalMongoose, options);
