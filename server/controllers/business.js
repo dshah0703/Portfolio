@@ -27,7 +27,7 @@ module.exports.displayBusinessList = (req, res, next) => {
             BusinessList: businessList, 
             displayName: req.user ? req.user.displayName : ''});      
         }
-    });
+    }).sort({"name":1})
 }
 
 module.exports.displayAddPage = (req, res, next) => {
